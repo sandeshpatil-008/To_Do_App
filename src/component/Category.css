@@ -1,0 +1,146 @@
+.toDoMain {
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+    padding: 10px;
+    margin-bottom: 10px;
+
+}
+
+.CardChecklist {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.PlusSquare {
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.Squre {
+    vertical-align: top;
+}
+
+.heading {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    cursor: pointer;
+    height: 5vh;
+    margin-top: -16px;
+
+}
+.XLg:hover,
+.PencilSquare:hover,
+.ThreeDotsVertical:hover,
+.CardChecklist:hover,
+.PlusSquare:hover {
+    color: rgb(254, 176, 102);
+    transition: 0.2s all ease-in;
+}
+
+.heading:hover {
+    color: rgb(254, 176, 102);
+    transition: 0.2s all ease-in;
+}
+
+
+.catSection {
+    margin: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr 6fr 1fr;
+}
+
+.catSection>div:nth-child(1) {
+    justify-content: center;
+    display: grid;
+    align-items: center;
+   
+}
+.RecordCircle {
+    font-size: 3rem;
+    color: rgb(254, 176, 102);
+}
+
+.catSection>div:nth-child(2) {
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px 0px;
+}
+
+.catSection>div:nth-child(3) {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    color: rgb(174, 174, 174);
+}
+
+.ThreeDotsVertical {
+    font-size: 2.5rem;
+    cursor: pointer;
+    color: rgb(179, 178, 178);
+}
+
+.threeDot {
+    outline: none;
+    background-color: transparent;
+    border: none;
+}
+
+.PencilSquare {
+    font-size: 2rem;
+}
+
+.XLg {
+    font-size: 1.9rem;
+
+}
+
+.editName{
+    font-family: 'Times New Roman', Times, serif;
+}
+.mainImg{
+    background-image: url(./img/category1.png);
+    background-size: cover;
+    background-position: center;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 10px;
+    height: 47vh;
+    margin-bottom: 50px;
+
+
+}
+.cateCenter{
+    margin-left: 3rem;
+    padding-top: 8rem;
+    color: white;
+    font-family: ui-monospace;
+   
+}
+    
+@media(max-width:500px){
+    .catSection{
+        grid-template-columns: 1.5fr 5fr 1fr;
+    }
+}
+@media(max-width:400px){
+    .heading{
+        font-size: 2rem;
+        margin-top: -10px;
+    }
+    .CardChecklist {
+        font-size: 1.5rem;
+    }
+    
+    .PlusSquare {
+        font-size: 1.5rem;
+        
+    }
+    .Squre{
+        margin-top: -2px;
+    }
+}
